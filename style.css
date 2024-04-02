@@ -1,0 +1,166 @@
+#header{
+    width: 102%;
+    margin-top: -5;
+    margin-left: -5;
+
+}
+#mainheading{
+    width: 104%;
+    background-color: lime;
+    color: rgb(255, 140, 0);
+    text-align: center;
+    margin-top: 1;
+    margin-left: -10;
+    
+}
+
+@media only screen and (max-width:12000px){.scroll{
+    color: rgb(0, 199, 0);
+    background-color: black;
+    margin-bottom: 0%;
+    bottom: -2000;
+    top: 2000;
+
+}}
+
+@media only screen and (max-width:600px){.scroll{
+    color: rgb(0, 199, 0);
+    background-color: black;
+    position: sticky;
+    top: 20px;
+}}
+@media only screen and (max-width:12000px){
+.nicher{
+    background-color: black;
+    color: aqua;
+    left: 0; 
+    z-index: 10;
+    width: 100%;
+}}
+@media only screen and (max-width:600px){
+    .nicher{
+        background-color: black;
+        color: aqua; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
+        
+    }}
+#nimne{
+    text-align: center;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:12000px){.aside{
+    margin-left: 60%;
+    background-color: darkblue;
+    margin-top: -285 ;
+    height: 400px;
+    overflow:scroll
+}}
+@media only screen and (max-width:600px){.aside{
+    margin-left: 60%;
+    background-color: darkblue;
+    margin-top: -790 ;
+    height: 400px;
+    overflow:scroll
+}}
+
+.bside{
+    margin-right: 40%;
+}
+#lekha{
+    color:rgb(0, 212, 0)
+}
+.butam{
+    background-color: rgb(200, 255, 0);
+    color: red;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5% / 50%;
+}
+#habajaba{
+    margin-top: 0;
+    font-weight: 1000;
+}
+@media only screen and (max-width:600px){
+    .valona{
+        position: absolute;
+        bottom: -200; 
+        left: 0; 
+        z-index: 10;
+        width:105%;
+        
+        
+    }
+}
+@media only screen and (max-width:12000px){
+    .valona{
+        width:105%;
+        margin-left: -10;
+    }
+}
+#shesh{
+    color: magenta;
+    font:italic;
+}
+@media only screen and (max-width:12000px){
+#jubba{
+    width: 400;
+    height: 750;
+}
+#cote{
+    width: 400;
+    height: 750;
+}
+#tg{
+    width: 400;
+    height: 500;
+}
+#cb{
+    width: 400;
+    height: 700;
+}
+#mp{
+    width: 550px;
+    height: 500px;
+}
+}
+@media only screen and (max-width:600px){
+    #jubba{
+        width: 170;
+        height:300;
+    }
+    #cote{
+        width: 170;
+        height: 250;
+    }
+    #tg{
+        width: 170;
+        height: 200;
+    }
+    #cb{
+        width: 170;
+        height: 300;
+    }
+    #mp{
+        width: 200px;
+        height: 150px;
+    }
+    }
+#sobirid{
+    color: darkmagenta;
+    background-color: aqua;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5% / 50%;
+    text-align: center;
+}
+#tikana{
+    color: chartreuse;
+    background-color: chocolate;
+    text-align: center;
+    text-transform: capitalize;
+}
