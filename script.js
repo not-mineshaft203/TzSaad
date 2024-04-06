@@ -60,17 +60,116 @@ function linkh(){
     }
 
 }
+var func4 = 1;
+function linki(){
+    if(func4 > 2){
+        func4--;
+        document.querySelector("#buga").innerHTML = ``;
+    }else{
+        func4++;
+        document.querySelector("#buga").innerHTML = 
+        `if you found any bug or glich or any other problem than please inform us on messenger.`
+    }
 
+}
 
 function saving(a,b){
     var a = b
     console.log(a)
 }
 
-var username = prompt("whats your name?")
-var jhamela = username+"key"
-localStorage.setItem(jhamela,username)
-alert('hello ' + username + " welcome to my website")
+
+function login(){
+    var username = prompt("whats your name?")
+    if(username){
+        if(localStorage.getItem(username)){
+            var password1234 = prompt('what is your password? if you forgot than use another username.')
+            if(password1234 == localStorage.getItem(username)){
+                alert('hello ' + username + " welcome to my website")
+            }
+            else{
+                alert("password is incorrect please give the correct password or use another username.")
+                login()
+            }
+    
+    
+        }
+        else{
+            function passtaking(){var password1234 = prompt("set your password (you must remember this).")
+            if(password1234){
+                localStorage.setItem(username,password1234);
+                alert('hello ' + username + " welcome to my website")
+            }
+            else{
+                alert("you must give password")
+                passtaking()
+            }
+            
+        
+            }
+             passtaking()}     
+    }
+    else{
+        alert("you must give username")
+        login()
+    }
+function settingerfunc (){
+    var prufile = username.split(' ').map(function (s) { return s.charAt(0); }).join('');    
+    document.querySelector("#profile").innerHTML = prufile;
+    document.querySelector("#susername").innerHTML = prufile;
+    document.querySelector("#susername").innerHTML = username;
+    document.querySelector("#word").innerHTML = password1234;
+    var h = null
+    function saving(b){
+        var a = b
+        h = h+","+a
+        document.querySelector("#onnoid").innerHTML = h
+    }
+    var i = 0
+    while (i < localStorage.length){
+        var b = localStorage.key(i);
+        saving(b);
+        i++
+    }
+}
+settingerfunc()
+}
+
+function settingon(){
+    document.querySelector(".nampaltano").style.visibility = "visible";
+    document.querySelector("#protom").style.visibility = "visible";
+    document.querySelector("#ditio").style.visibility = "visible";
+}
+function settingoff(){
+    document.querySelector(".nampaltano").style.visibility = "hidden";
+    document.querySelector("#protom").style.visibility = "hidden";
+    document.querySelector("#ditio").style.visibility = "hidden";
+    
+}
+
+
+function deleting(){
+    var dname = prompt("which account do you want to delete?")
+    if(localStorage.getItem(dname)){
+        localStorage.removeItem(dname)
+        alert(dname+" was deleted successfully")
+        login()
+    }
+    else{
+        alert("the name was not found/cancelled.")
+    }
+} 
+addEventListener("load", (a)=>{
+    a.preventDefault();
+    a.returnValue = ''
+    login()
+})
+
+
+addEventListener("beforeunload", (e)=>{
+    e.preventDefault();
+    e.returnValue = ''
+})
 
 var i = 0
 while (i < localStorage.length){
@@ -79,3 +178,4 @@ while (i < localStorage.length){
     saving(c,b);
     i++
 }
+

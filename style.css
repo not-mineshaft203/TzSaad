@@ -171,3 +171,154 @@
         bottom: -1700;
     }
 }
+#profile{
+    position:absolute;
+    background-color: orangered;
+    width: 40;
+    height: 40;
+    border-radius: 50%;
+    text-align: center;
+    right: 0;
+    top: 0;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:12000px){
+    .nampaltano{
+    position: absolute;
+    background-color: white;
+    background: white;
+    top: 20%;
+    left: 10%;
+    width: 75%;
+    height: 50%;
+    position: fixed;
+    visibility: hidden;
+}
+#ditio{
+    color: black;
+    background-color: rgb(177, 177, 177);
+    width: 70;
+    height: 20;
+    top: 64.8%;
+    left: 72.7%;
+}
+#protom{
+    color: black;
+    background-color: rgb(177, 177, 177);
+    width: 70;
+    height: 20;
+    top: 64.8%;
+    left: 12%;
+    position: fixed;
+}
+#preprotom{
+    color: black;
+    top: -90;
+    text-align: center;
+}
+.prufille{
+    background-color: rgb(177, 177, 177);
+    margin-top: 0;
+}
+#sprofile{
+    background-color: orangered;
+    width: 40;
+    height: 40;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: capitalize;
+    float: left;
+}
+#susername{
+    height: 40;
+    left: 0;
+    margin: 0;
+}
+#word{
+    width: 100%;
+    background-color:  rgb(177, 177, 177);
+    margin: 0;
+}
+#cross{
+    top: 7;
+    right: 7;
+    position: absolute;
+    background-color: red;
+    color: black;
+    height: 30;
+    width: 30;
+    text-align: center;
+    font-size: large;
+    font: bold;
+}
+}
+@media only screen and (max-width:600px){
+    .nampaltano{
+        position: absolute;
+        background-color: white;
+        background: white;
+        top: 20%;
+        left: 10%;
+        width: 75%;
+        height: 50%;
+        position: fixed;
+        visibility: visible;
+    }
+    #ditio{
+        color: black;
+        background-color: rgb(177, 177, 177);
+        width: 70;
+        height: 20;
+        top: 66%;
+        left: 65%;
+    }
+    #protom{
+        color: black;
+        background-color: rgb(177, 177, 177);
+        width: 70;
+        height: 20;
+        top: 66%;
+        left: 12%;
+        position: fixed;
+    }
+    #preprotom{
+        color: black;
+        top: -90;
+        text-align: center;
+    }
+    .prufille{
+        background-color: rgb(177, 177, 177);
+        margin-top: 0;
+    }
+    #sprofile{
+        background-color: orangered;
+        width: 40;
+        height: 40;
+        border-radius: 50%;
+        text-align: center;
+        text-transform: capitalize;
+        float: left;
+    }
+    #susername{
+        height: 40;
+        left: 0;
+        margin: 0;
+    }
+    #word{
+        width: 100%;
+        background-color:  rgb(177, 177, 177);
+        margin: 0;
+    }
+    #cross{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        text-align: center;
+        font-size: large;
+        font: bold;
+    }
+}
