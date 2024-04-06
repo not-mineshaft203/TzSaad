@@ -119,6 +119,7 @@ function settingerfunc (){
     document.querySelector("#susername").innerHTML = prufile;
     document.querySelector("#susername").innerHTML = username;
     document.querySelector("#word").innerHTML = password1234;
+    document.querySelector("#sprofile").innerHTML = prufile;
     var h = null
     function saving(b){
         var a = b
