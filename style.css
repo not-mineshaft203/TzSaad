@@ -262,7 +262,7 @@
         width: 75%;
         height: 50%;
         position: fixed;
-        visibility: visible;
+        visibility: hidden;
     }
     #ditio{
         color: black;
@@ -320,5 +320,93 @@
         text-align: center;
         font-size: large;
         font: bold;
+    }
+}
+
+@media only screen and (max-width:12000px){
+    .oll{
+        background-color: rgb(7, 5, 20);
+        width: 70%;
+        height: 600;
+        position: absolute;
+        top: 30;
+        bottom: 0;
+        left: 100;
+        text-align: center;
+        position: fixed;
+        overflow: auto;
+        visibility: hidden;
+        color: white;
+    }
+    #ollh{
+        background-color: rgb(141, 125, 125);
+        color: chartreuse;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #ollbtn{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        font-size: large;
+        font: bold;
+    }
+    #ollhb{
+        background-color: rgb(141, 125, 125);
+        color: blue;
+        text-align: center;
+        margin-top: 0;
+    }
+    .mainoll{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .oll{
+        background-color: rgb(7, 5, 20);
+        width: 75%;
+        height: 520;
+        position: absolute;
+        top: 20;
+        bottom: 0;
+        left: 50;
+        text-align: center;
+        position: fixed;
+        overflow: auto;
+        visibility: hidden;
+        color: white;
+    }
+    #ollh{
+        background-color: rgb(141, 125, 125);
+        color: chartreuse;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #ollbtn{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        font-size: large;
+        font: bold;
+    }
+    #ollhb{
+        background-color: rgb(141, 125, 125);
+        color: blue;
+        text-align: center;
+        margin-top: 0;
+    }
+    .mainoll{
+        text-align: left;
     }
 }

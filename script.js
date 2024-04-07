@@ -72,6 +72,22 @@ function linki(){
     }
 
 }
+function linkj(){
+    document.querySelector(".oll").style.visibility = "visible";
+}
+var func5 = 1;
+function linkk(){
+    if(func5 > 2){
+        func5--;
+        document.querySelector("#temp").innerHTML = ``;
+    }else{
+        func5++;
+        document.querySelector("#temp").innerHTML = 
+        `we are currently working on this.please wait till the next update to get this service.`
+    }
+
+}
+
 
 function saving(a,b){
     var a = b
@@ -160,6 +176,12 @@ function deleting(){
         alert("the name was not found/cancelled.")
     }
 } 
+
+function olloff(){
+    document.querySelector(".oll").style.visibility = "hidden"
+}
+
+
 addEventListener("load", (a)=>{
     a.preventDefault();
     a.returnValue = ''
