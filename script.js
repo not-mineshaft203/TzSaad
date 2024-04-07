@@ -88,6 +88,9 @@ function linkk(){
 
 }
 
+function linkl(){
+    document.querySelector(".turns").style.visibility = "visible";
+}
 
 function saving(a,b){
     var a = b
@@ -181,6 +184,9 @@ function olloff(){
     document.querySelector(".oll").style.visibility = "hidden"
 }
 
+function trnoff(){
+    document.querySelector(".turns").style.visibility = "hidden"
+}
 
 addEventListener("load", (a)=>{
     a.preventDefault();
