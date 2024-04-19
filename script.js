@@ -191,6 +191,8 @@ function trnoff(){
 addEventListener("load", (a)=>{
     a.preventDefault();
     a.returnValue = ''
+    document.querySelector("#loading").style.visibility = "hidden"
+    document.querySelector("#loadingg").style.visibility = "hidden"
     login()
 })
 

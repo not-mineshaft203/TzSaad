@@ -1,3 +1,328 @@
+span::before { 
+    content: ""; 
+    animation: reveal-all infinite 10s; 
+    padding-left: 10px; 
+} 
+
+
+@keyframes reveal-all {
+    0% {
+        content: "";
+    }
+    /* Opening "YouTuber" */
+    1% {
+        content: "Y";
+    }
+    2% {
+        content: "Yo";
+    }
+    3% {
+        content: "You";
+    }
+    4% {
+        content: "Yout";
+    }
+    5% {
+        content: "Youtu";
+    }
+    6% {
+        content: "Youtub";
+    }
+    7% {
+        content: "YouTuber";
+    }
+    /* Delay before closing "YouTuber" */
+    8% {
+        content: "YouTuber";
+    }
+    9% {
+        content: "YouTuber";
+    }
+    10% {
+        content: "YouTuber";
+    }
+    /* Closing "YouTuber" */
+    11% {
+        content: "YouTuber";
+    }
+    12% {
+        content: "YouTub";
+    }
+    13% {
+        content: "YouTu";
+    }
+    14% {
+        content: "YouT";
+    }
+    15% {
+        content: "You";
+    }
+    16% {
+        content: "Yo";
+    }
+    17% {
+        content: "Y";
+    }
+    /* Opening "Cuber" */
+    18% {
+        content: "C";
+    }
+    19% {
+        content: "Cu";
+    }
+    20% {
+        content: "Cub";
+    }
+    21% {
+        content: "Cube";
+    }
+    22% {
+        content: "Cuber";
+    }
+    /* Delay before closing "Cuber" */
+    23% {
+        content: "Cuber";
+    }
+    24% {
+        content: "Cuber";
+    }
+    25% {
+        content: "Cuber";
+    }
+    /* Closing "Cuber" */
+    26% {
+        content: "Cuber";
+    }
+    27% {
+        content: "Cube";
+    }
+    28% {
+        content: "Cub";
+    }
+    29% {
+        content: "Cu";
+    }
+    30% {
+        content: "C";
+    }
+    /* Opening "Web-developer" */
+    31% {
+        content: "W";
+    }
+    32% {
+        content: "We";
+    }
+    33% {
+        content: "Web";
+    }
+    34% {
+        content: "Web-";
+    }
+    35% {
+        content: "Web-d";
+    }
+    36% {
+        content: "Web-de";
+    }
+    37% {
+        content: "Web-dev";
+    }
+    38% {
+        content: "Web-deve";
+    }
+    39% {
+        content: "Web-devel";
+    }
+    40% {
+        content: "Web-devele";
+    }
+    41% {
+        content: "Web-develo";
+    }
+    42% {
+        content: "Web-develop";
+    }
+    43% {
+        content: "Web-develope";
+    }
+    44% {
+        content: "Web-developer";
+    }
+    /* Delay before closing "Web-developer" */
+    45% {
+        content: "Web-developer";
+    }
+    46% {
+        content: "Web-developer";
+    }
+    47% {
+        content: "Web-developer";
+    }
+    /* Closing "Web-developer" */
+    48% {
+        content: "Web-developer";
+    }
+    49% {
+        content: "Web-develope";
+    }
+    50% {
+        content: "Web-develop";
+    }
+    51% {
+        content: "Web-deve";
+    }
+    52% {
+        content: "Web-dev";
+    }
+    53% {
+        content: "Web-de";
+    }
+    54% {
+        content: "Web-d";
+    }
+    55% {
+        content: "Web-";
+    }
+    56% {
+        content: "Web";
+    }
+    57% {
+        content: "We";
+    }
+    58% {
+        content: "W";
+    }
+    /* Opening "Programmer" */
+    59% {
+        content: "P";
+    }
+    60% {
+        content: "Pr";
+    }
+    61% {
+        content: "Pro";
+    }
+    62% {
+        content: "Prog";
+    }
+    63% {
+        content: "Progr";
+    }
+    64% {
+        content: "Progra";
+    }
+    65% {
+        content: "Program";
+    }
+    66% {
+        content: "Programm";
+    }
+    67% {
+        content: "Programme";
+    }
+    68% {
+        content: "Programmer";
+    }
+    /* Delay before closing "Programmer" */
+    69% {
+        content: "Programmer";
+    }
+    70% {
+        content: "Programmer";
+    }
+    71% {
+        content: "Programmer";
+    }
+    /* Closing "Programmer" */
+    72% {
+        content: "Programmer";
+    }
+    73% {
+        content: "Programme";
+    }
+    74% {
+        content: "Programm";
+    }
+    75% {
+        content: "Program";
+    }
+    76% {
+        content: "Progra";
+    }
+    77% {
+        content: "Prog";
+    }
+    78% {
+        content: "Pro";
+    }
+    79% {
+        content: "Pr";
+    }
+    80% {
+        content: "P";
+    }
+    /* Opening "Student" */
+    81% {
+        content: "S";
+    }
+    82% {
+        content: "St";
+    }
+    83% {
+        content: "Stu";
+    }
+    84% {
+        content: "Stud";
+    }
+    85% {
+        content: "Stude";
+    }
+    86% {
+        content: "Studen";
+    }
+    87% {
+        content: "Student";
+    }
+    /* Delay before closing "Student" */
+    88% {
+        content: "Student";
+    }
+    89% {
+        content: "Student";
+    }
+    90% {
+        content: "Student";
+    }
+    /* Closing "Student" */
+    91% {
+        content: "Student";
+    }
+    92% {
+        content: "Studen";
+    }
+    93% {
+        content: "Stude";
+    }
+    94% {
+        content: "Stud";
+    }
+    95% {
+        content: "Stu";
+    }
+    96% {
+        content: "St";
+    }
+    97% {
+        content: "S";
+    }
+    /* Add any additional words or adjustments as needed */
+}
+
+
+
+
+
+
 #header{
     width: 102%;
     margin-top: -5;
@@ -257,6 +582,77 @@
         position: absolute;
         background-color: white;
         background: white;
+        top: 12%;
+        left: 1%;
+        width: 65%;
+        height: 35%;
+        position: fixed;
+        visibility: hidden;
+    }
+    #ditio{
+        color: black;
+        background-color: rgb(177, 177, 177);
+        width: 70;
+        height: 20;
+        top: 45%;
+        left: 53%;
+    }
+    #protom{
+        color: black;
+        background-color: rgb(177, 177, 177);
+        width: 70;
+        height: 20;
+        top: 45%;
+        left: 2%;
+        position: fixed;
+    }
+    #preprotom{
+        color: black;
+        top: -90;
+        text-align: center;
+    }
+    .prufille{
+        background-color: rgb(177, 177, 177);
+        margin-top: 0;
+    }
+    #sprofile{
+        background-color: orangered;
+        width: 40;
+        height: 40;
+        border-radius: 50%;
+        text-align: center;
+        text-transform: capitalize;
+        float: left;
+    }
+    #susername{
+        height: 40;
+        left: 0;
+        margin: 0;
+    }
+    #word{
+        width: 100%;
+        background-color:  rgb(177, 177, 177);
+        margin: 0;
+    }
+    #cross{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        text-align: center;
+        font-size: large;
+        font: bold;
+    }
+}
+
+@media only screen and (max-width:400){
+    .nampaltano{
+        position: absolute;
+        background-color: white;
+        background: white;
         top: 20%;
         left: 10%;
         width: 75%;
@@ -323,15 +719,16 @@
     }
 }
 
+
 @media only screen and (max-width:12000px){
     .oll{
         background-color: rgb(7, 5, 20);
-        width: 70%;
+        width: 100%;
         height: 600;
         position: absolute;
         top: 30;
         bottom: 0;
-        left: 100;
+        left: 10;
         text-align: center;
         position: fixed;
         overflow: auto;
@@ -364,10 +761,61 @@
     }
     .mainoll{
         text-align: left;
+        width: 500;
+        height: 500;
+        margin: 0;
+        font-size: 50; 
     }
 }
 
 @media only screen and (max-width:600px){
+    .oll{
+        background-color: rgb(7, 5, 20);
+        width: 65%;
+        height: 520;
+        position: absolute;
+        top: 20;
+        bottom: 0;
+        left: 5;
+        text-align: center;
+        position: fixed;
+        overflow: auto;
+        visibility: hidden;
+        color: white;
+    }
+    #ollh{
+        background-color: rgb(141, 125, 125);
+        color: chartreuse;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #ollbtn{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        font-size: large;
+        font: bold;
+    }
+    #ollhb{
+        background-color: rgb(141, 125, 125);
+        color: blue;
+        text-align: center;
+        margin-top: 0;
+    }
+    .mainoll{
+        text-align: left;
+        width: 300;
+        height: 300;
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width:400px){
     .oll{
         background-color: rgb(7, 5, 20);
         width: 75%;
@@ -408,6 +856,9 @@
     }
     .mainoll{
         text-align: left;
+        width: 200;
+        height: 200;
+        font-size: x-large;
     }
 }
 
@@ -455,7 +906,7 @@
         position: absolute;
         top: 30;
         bottom: 0;
-        left: 60;
+        left: 0;
         text-align: center;
         position: fixed;
         overflow: auto;
@@ -479,5 +930,88 @@
         height: 90%;
         margin-bottom: 20;
     }
+
+}
+@media only screen and (max-width:400px){
+    .turns{
+        background-color: rgb(7, 5, 20);
+        width: 100%;
+        height: 600;
+        position: absolute;
+        top: 30;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        position: fixed;
+        overflow: auto;
+        visibility: hidden;
+        color: white;
     
     }
+    #trnbtn{
+        top: 7;
+        right: 7;
+        position: absolute;
+        background-color: red;
+        color: black;
+        height: 30;
+        width: 30;
+        font-size: large;
+        font: bold;
+    }
+    #copyc{
+        width: 90%;
+        height: 90%;
+        margin-bottom: 20;
+    }
+}
+#options{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    background-color: darkmagenta;
+}
+#loading{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 150%;
+    height: 200%;
+    margin: 0;
+    top: -20;
+    left: -20;
+    right: -20;
+    bottom: -20;
+    visibility: visible;
+}
+@keyframes loading {
+    25%{
+        content: "loading";
+    }
+    50%{
+        content: "loading.";
+    }
+    75%{
+        content: "loading..";
+    }
+    100%{
+        content: "loading...";
+    }
+}
+#loadingg{
+    color: white;
+    position: absolute;
+    left: auto;
+    right: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top:50%;
+    visibility: visible;
+}
+#loadingg::before{
+    content: "loading";
+    animation: loading infinite 1s; 
+    padding-left: 10px; 
+}
