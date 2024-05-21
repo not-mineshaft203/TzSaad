@@ -319,10 +319,6 @@ span::before {
 }
 
 
-
-
-
-
 #header{
     width: 102%;
     margin-top: -5;
@@ -972,6 +968,8 @@ span::before {
     text-align: center;
     background-color: darkmagenta;
 }
+
+@media only screen and (max-width:12000px){
 #loading{
     position: absolute;
     background-color: black;
@@ -985,6 +983,36 @@ span::before {
     bottom: -20;
     visibility: visible;
 }
+}
+
+@media only screen and (max-width:12000px){
+    #loadingg{
+        color: white;
+        position: absolute;
+        left: auto;
+        right: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top:50%;
+        visibility: visible;
+}
+}
+
+@media only screen and (max-width:600px){
+    #loadingg{
+        color: white;
+        position: absolute;
+        left: auto;
+        right: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top:25%;
+        visibility: visible;
+}
+}
+
 @keyframes loading {
     25%{
         content: "loading";
@@ -999,19 +1027,230 @@ span::before {
         content: "loading...";
     }
 }
-#loadingg{
-    color: white;
-    position: absolute;
-    left: auto;
-    right: auto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    top:50%;
-    visibility: visible;
-}
+
 #loadingg::before{
     content: "loading";
     animation: loading infinite 1s; 
     padding-left: 10px; 
 }
+
+@media only screen and (max-width:12000px){
+#crep{
+    color: green;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+}
+#creptx{
+    color: lime;
+    margin-top: 5%;
+    visibility: hidden;
+}
+#berono{
+    color: red;
+    background-color: yellow;
+    width: 30;
+    height: 30;
+    font-size: 22;
+    position: absolute;
+    right: 5;
+    top: 5;
+    visibility: hidden;
+}
+#warn{
+background-color: rgb(174, 174, 174);
+position: fixed;
+width: 60%;
+height: 45%;
+top: 30%;
+left: 28%;
+visibility: hidden;
+}
+#true{
+    margin-top: -4%;
+    margin-left:87% ;
+    background-color: black;
+    color: red;
+    border-color: yellow;
+}
+
+#false{
+    margin-top: 20%;
+    background-color: black;
+    color: lime;
+    margin-left: 15;
+
+}
+
+
+#video{
+    height: 35%;
+    width: 45%;
+    visibility: hidden;
+}
+
+}
+
+
+@media only screen and (max-width:600px){
+    #crep{
+        color: green;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin: 0;
+        left: 0;
+        text-align: center;
+        visibility: hidden;
+    }
+    #creptx{
+        color: lime;
+        margin-top: 50%;
+        font-size: 30;
+        margin-left: 30;
+        width: 400;
+        position: fixed;
+        visibility: hidden;
+    }
+    #berono{
+        color: red;
+        background-color: yellow;
+        width: 30;
+        height: 30;
+        font-size: 22;
+        position: fixed;
+        right: 199;
+        top: 10;
+        visibility: hidden;
+    }
+    #warnm{
+        font-size: 25;
+    }
+    #warn{
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    width: 60%;
+    height: 10%;
+    top: 15%;
+    left: 5%;
+    visibility: hidden;
+    }
+    #true{
+        margin-top: -8.4%;
+        margin-left:72% ;
+        background-color: black;
+        color: red;
+        border-color: yellow;
+        width: max-content;
+        height: 25;
+    }
+    
+    #false{
+        margin-top: 2%;
+        background-color: black;
+        color: lime;
+        margin-left: 15;
+    
+    }
+    
+    
+    #video{
+        height: 35%;
+        width: 45%;
+        margin: 0;
+        padding: 0;
+        top: -100;
+        left: 80;
+        position: fixed;
+        visibility: hidden;
+    }
+    
+    }
+
+
+@media only screen and (max-width:400px){
+        #crep{
+            color: green;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            margin: 0;
+            left: 0;
+            text-align: center;
+            visibility: hidden;
+        }
+        #creptx{
+            color: lime;
+            margin-top: 45%;
+            font-size: 30;
+            margin-left: 20;
+            width: 350;
+            position: fixed;
+            visibility: hidden;
+            text-align: center;
+        }
+        #berono{
+            color: red;
+            background-color: yellow;
+            width: 30;
+            height: 30;
+            font-size: 22;
+            position: fixed;
+            right: 177;
+            top: 6;
+            visibility: hidden;
+        }
+        #warnm{
+            font-size: 25;
+        }
+        #warn{
+        background-color: rgb(174, 174, 174);
+        position: fixed;
+        width: 60%;
+        height: 10%;
+        top: 15%;
+        left: 5%;
+        visibility: hidden;
+        }
+        #true{
+            margin-top: -10%;
+            margin-left:72% ;
+            background-color: black;
+            color: red;
+            border-color: yellow;
+            width: max-content;
+            height: 25;
+        }
+        
+        #false{
+            margin-top: 0.01%;
+            background-color: black;
+            color: lime;
+            margin-left: 15;
+        
+        }
+        
+        
+        #video{
+            height: 35%;
+            width: 55%;
+            margin: 0;
+            padding: 0;
+            top: -90;
+            left: 35;
+            position: fixed;
+            visibility: hidden;
+        }
+        
+        }
+    

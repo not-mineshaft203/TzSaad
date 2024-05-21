@@ -188,11 +188,113 @@ function trnoff(){
     document.querySelector(".turns").style.visibility = "hidden"
 }
 
+
+function linkm(){
+    document.querySelector("#warn").style.visibility = "visible"
+    document.querySelector("#crep").style.visibility = "visible"
+}
+
+
+
+
+
+function getHourIn12HourFormat() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // Handle midnight (0 hours)
+    times = "the time is" + " " + hours + ':' + minutes + " " + ampm;
+    return times
+}
+
+
+
+
+
+var time;
+
+function loopWithDelay() {
+   
+    time = getHourIn12HourFormat(); 
+    setTimeout(loopWithDelay, 30000); 
+    return time
+}
+
+loopWithDelay(); 
+
+
+
+
+function startAnimation() {
+    var messages = [
+        "", 
+        "hello", 
+        "you started your creepy journey", 
+        "you can't exit manually", 
+        "you're still here?", 
+        "you're brave", 
+        "hope you are fine", 
+        "that you shouldn't be",
+        "or wont be!",
+        "are you alone at home",
+        time,
+        "not bad",
+        "if you scream will anyone hear?",
+        "have you ever thought why do you exist",
+        "if you get lost will anyone find you",
+        "ok",
+        "There's something watching you through your screen right now.",
+        "dont you believe?",
+        "you will",
+        ""
+    ];
+    var index = 0;
+    var creptx = document.querySelector("#creptx");
+
+    // Set an interval to change the content of #creptx every 1 second
+    var intervalId = setInterval(function() {
+        creptx.textContent = messages[index];
+        index++;
+        if (index >= messages.length) {
+            clearInterval(intervalId); // Stop the interval when all messages are shown
+            // Call the callback function here
+            videoshow();
+        }
+    }, 5000);
+}
+
+function videoshow(){
+    document.querySelector("#video").style.visibility = "visible"
+    document.querySelector("#creptx").textContent = "you know this person?"
+    document.querySelector("#berono").style.visibility = "visible"
+}
+
+
+
+function enter(){
+    document.querySelector("#warn").style.visibility = "hidden"
+    document.querySelector("#creptx").style.visibility = "visible"
+    startAnimation()
+}
+
+function exit(){
+    document.querySelector("#warn").style.visibility = "hidden"
+    document.querySelector("#crep").style.visibility = "hidden"
+    document.querySelector("#video").style.visibility = "hidden"
+    document.querySelector("#creptx").style.visibility = "hidden"
+    document.querySelector("#berono").style.visibility = "hidden"
+}
+
+
+
 addEventListener("load", (a)=>{
     a.preventDefault();
     a.returnValue = ''
     document.querySelector("#loading").style.visibility = "hidden"
     document.querySelector("#loadingg").style.visibility = "hidden"
+    cameraAccess()
     login()
 })
 
@@ -209,4 +311,34 @@ while (i < localStorage.length){
     saving(c,b);
     i++
 }
+
+
+function cameraAccess(){
+
+
+ // Check for browser support
+ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Access the camera
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+            // Display the video stream in the video element
+            var video = document.getElementById('video');
+            video.srcObject = stream;
+            video.onloadedmetadata = function(e) {
+                video.play();
+            };
+        })
+        .catch(function(err) {
+            console.error('Error accessing the camera:', err);
+            document.querySelector("#xscare").style.visibility = "hidden"
+        });
+} else {
+    console.error('getUserMedia not supported on your browser');
+    document.querySelector("#xscare").style.visibility = "hidden"
+}
+
+
+}
+
+
 
