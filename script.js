@@ -87,17 +87,13 @@ function linkk(){
     }
 
 }
-
 function linkl(){
     document.querySelector(".turns").style.visibility = "visible";
 }
-
 function saving(a,b){
     var a = b
     console.log(a)
 }
-
-
 function login(){
     var username = prompt("whats your name?")
     if(username){
@@ -154,7 +150,6 @@ function settingerfunc (){
 }
 settingerfunc()
 }
-
 function settingon(){
     document.querySelector(".nampaltano").style.visibility = "visible";
     document.querySelector("#protom").style.visibility = "visible";
@@ -166,8 +161,6 @@ function settingoff(){
     document.querySelector("#ditio").style.visibility = "hidden";
     
 }
-
-
 function deleting(){
     var dname = prompt("which account do you want to delete?")
     if(localStorage.getItem(dname)){
@@ -179,25 +172,16 @@ function deleting(){
         alert("the name was not found/cancelled.")
     }
 } 
-
 function olloff(){
     document.querySelector(".oll").style.visibility = "hidden"
 }
-
 function trnoff(){
     document.querySelector(".turns").style.visibility = "hidden"
 }
-
-
 function linkm(){
     document.querySelector("#warn").style.visibility = "visible"
     document.querySelector("#crep").style.visibility = "visible"
 }
-
-
-
-
-
 function getHourIn12HourFormat() {
     var currentTime = new Date();
     var hours = currentTime.getHours();
@@ -208,25 +192,14 @@ function getHourIn12HourFormat() {
     times = "the time is" + " " + hours + ':' + minutes + " " + ampm;
     return times
 }
-
-
-
-
-
 var time;
-
 function loopWithDelay() {
    
     time = getHourIn12HourFormat(); 
     setTimeout(loopWithDelay, 30000); 
     return time
 }
-
 loopWithDelay(); 
-
-
-
-
 function startAnimation() {
     var messages = [
         "", 
@@ -264,21 +237,16 @@ function startAnimation() {
         }
     }, 5000);
 }
-
 function videoshow(){
     document.querySelector("#video").style.visibility = "visible"
     document.querySelector("#creptx").textContent = "you know this person?"
     document.querySelector("#berono").style.visibility = "visible"
 }
-
-
-
 function enter(){
     document.querySelector("#warn").style.visibility = "hidden"
     document.querySelector("#creptx").style.visibility = "visible"
     startAnimation()
 }
-
 function exit(){
     document.querySelector("#warn").style.visibility = "hidden"
     document.querySelector("#crep").style.visibility = "hidden"
@@ -286,9 +254,6 @@ function exit(){
     document.querySelector("#creptx").style.visibility = "hidden"
     document.querySelector("#berono").style.visibility = "hidden"
 }
-
-
-
 addEventListener("load", (a)=>{
     a.preventDefault();
     a.returnValue = ''
@@ -297,13 +262,10 @@ addEventListener("load", (a)=>{
     cameraAccess()
     login()
 })
-
-
 addEventListener("beforeunload", (e)=>{
     e.preventDefault();
     e.returnValue = ''
 })
-
 var i = 0
 while (i < localStorage.length){
     var c = localStorage.key(i);
@@ -311,8 +273,6 @@ while (i < localStorage.length){
     saving(c,b);
     i++
 }
-
-
 function cameraAccess(){
 
 
@@ -339,6 +299,3 @@ function cameraAccess(){
 
 
 }
-
-
-

@@ -1,11 +1,9 @@
-span::before { 
+span::before { /*animation*/
     content: ""; 
     animation: reveal-all infinite 10s; 
     padding-left: 10px; 
 } 
-
-
-@keyframes reveal-all {
+@keyframes reveal-all {/*keyframe*/
     0% {
         content: "";
     }
@@ -317,8 +315,6 @@ span::before {
     }
     /* Add any additional words or adjustments as needed */
 }
-
-
 #header{
     width: 102%;
     margin-top: -5;
@@ -334,58 +330,36 @@ span::before {
     margin-left: -10;
     
 }
-
-@media only screen and (max-width:12000px){.scroll{
+.scroll{
     color: rgb(0, 199, 0);
     background-color: black;
     margin-bottom: 0%;
-    bottom: -2000;
-    top: 2000;
+    bottom: 0;
+    position: fixed;
 
-}}
-
-@media only screen and (max-width:600px){.scroll{
-    color: rgb(0, 199, 0);
-    background-color: black;
-    position: sticky;
-    top: 20px;
-}}
-@media only screen and (max-width:12000px){
-.nicher{
-    background-color: black;
-    color: aqua;
-    left: 0; 
-    z-index: 10;
-    width: 100%;
-}}
-@media only screen and (max-width:600px){
-    .nicher{
-        background-color: black;
-        color: aqua; 
-        bottom: 0; 
-        left: 0; 
-        z-index: 10;
-        
-    }}
+}
 #nimne{
     text-align: center;
     text-transform: capitalize;
+    background-color: black;
+    color: aqua; 
+    bottom: 0; 
+    left: 0;  
+    margin: 0;
+    margin-bottom: 0;
+    
 }
 @media only screen and (max-width:12000px){.aside{
     margin-left: 60%;
     background-color: darkblue;
     margin-top: -285 ;
     height: 400px;
-    overflow:scroll
+    overflow:scroll;
+    visibility: visible;
 }}
 @media only screen and (max-width:600px){.aside{
-    margin-left: 60%;
-    background-color: darkblue;
     margin-top: -790 ;
-    height: 400px;
-    overflow:scroll
 }}
-
 .bside{
     margin-right: 40%;
 }
@@ -400,6 +374,11 @@ span::before {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5% / 50%;
+}
+.butam:hover{
+    border: 5px solid blueviolet;
+    color: yellow;
+    background-color: red;
 }
 #habajaba{
     margin-top: 0;
@@ -643,7 +622,6 @@ span::before {
         font: bold;
     }
 }
-
 @media only screen and (max-width:400){
     .nampaltano{
         position: absolute;
@@ -714,8 +692,6 @@ span::before {
         font: bold;
     }
 }
-
-
 @media only screen and (max-width:12000px){
     .oll{
         background-color: rgb(7, 5, 20);
@@ -763,7 +739,6 @@ span::before {
         font-size: 50; 
     }
 }
-
 @media only screen and (max-width:600px){
     .oll{
         background-color: rgb(7, 5, 20);
@@ -810,7 +785,6 @@ span::before {
         font-size: xx-large;
     }
 }
-
 @media only screen and (max-width:400px){
     .oll{
         background-color: rgb(7, 5, 20);
@@ -857,7 +831,6 @@ span::before {
         font-size: x-large;
     }
 }
-
 @media only screen and (max-width:12000px){
 .turns{
     background-color: rgb(7, 5, 20);
@@ -892,8 +865,6 @@ span::before {
 }
 
 }
-
-
 @media only screen and (max-width:600px){
     .turns{
         background-color: rgb(7, 5, 20);
@@ -968,7 +939,6 @@ span::before {
     text-align: center;
     background-color: darkmagenta;
 }
-
 @media only screen and (max-width:12000px){
 #loading{
     position: absolute;
@@ -984,7 +954,6 @@ span::before {
     visibility: visible;
 }
 }
-
 @media only screen and (max-width:12000px){
     #loadingg{
         color: white;
@@ -998,7 +967,6 @@ span::before {
         visibility: visible;
 }
 }
-
 @media only screen and (max-width:600px){
     #loadingg{
         color: white;
@@ -1012,7 +980,6 @@ span::before {
         visibility: visible;
 }
 }
-
 @keyframes loading {
     25%{
         content: "loading";
@@ -1027,14 +994,12 @@ span::before {
         content: "loading...";
     }
 }
-
 #loadingg::before{
     content: "loading";
     animation: loading infinite 1s; 
     padding-left: 10px; 
 }
-
-@media only screen and (max-width:12000px){
+@media only screen and (max-width:12000px){/*crep*/
 #crep{
     color: green;
     background-color: black;
@@ -1096,9 +1061,7 @@ visibility: hidden;
 }
 
 }
-
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px){/*crep*/
     #crep{
         color: green;
         background-color: black;
@@ -1174,9 +1137,7 @@ visibility: hidden;
     }
     
     }
-
-
-@media only screen and (max-width:400px){
+@media only screen and (max-width:400px){/*crep*/
         #crep{
             color: green;
             background-color: black;
@@ -1206,7 +1167,7 @@ visibility: hidden;
             height: 30;
             font-size: 22;
             position: fixed;
-            right: 177;
+            right: 170;
             top: 6;
             visibility: hidden;
         }
@@ -1217,14 +1178,14 @@ visibility: hidden;
         background-color: rgb(174, 174, 174);
         position: fixed;
         width: 60%;
-        height: 10%;
+        height: 15%;
         top: 15%;
         left: 5%;
         visibility: hidden;
         }
         #true{
-            margin-top: -10%;
-            margin-left:72% ;
+            margin-top: -12%;
+            margin-left:66% ;
             background-color: black;
             color: red;
             border-color: yellow;
@@ -1236,7 +1197,7 @@ visibility: hidden;
             margin-top: 0.01%;
             background-color: black;
             color: lime;
-            margin-left: 15;
+            margin-left: 8;
         
         }
         
@@ -1253,4 +1214,6 @@ visibility: hidden;
         }
         
         }
-    
+
+
+
