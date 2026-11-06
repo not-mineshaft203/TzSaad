@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "title": "দাঁড়িয়ে থাকা",
+        "folder": "standing"
+    },
+    {
+        "id": 2,
+        "title": "তাকবিরে তাহরিমা",
+        "folder": "takbir"
+    },
+    {
+        "id": 3,
+        "title": "হাত বাঁধা",
+        "folder": "folding-hands"
+    },
+    {
+        "id": 4,
+        "title": "রুকু",
+        "folder": "ruku"
+    },
+    {
+        "id": 5,
+        "title": "রুকু থেকে ওঠা",
+        "folder": "rising-from-ruku"
+    },
+    {
+        "id": 6,
+        "title": "সিজদা",
+        "folder": "sajdah"
+    },
+    {
+        "id": 7,
+        "title": "দুই সিজদার মাঝখানে বসা",
+        "folder": "sitting-between-sajdahs"
+    },
+    {
+        "id": 8,
+        "title": "সিজদা থেকে ওঠা",
+        "folder": "rising-from-sajdah"
+    },
+    {
+        "id": 9,
+        "title": "প্রথম বৈঠক",
+        "folder": "first-tashahhud"
+    },
+    {
+        "id": 10,
+        "title": "প্রথম বৈঠকের পর ওঠা",
+        "folder": "rising-after-first-tashahhud"
+    },
+    {
+        "id": 11,
+        "title": "শেষ বৈঠক",
+        "folder": "final-tashahhud"
+    },
+    {
+        "id": 12,
+        "title": "সালাম ফেরানো",
+        "folder": "salam"
+    },
+    {
+        "id": 13,
+        "title": "নামাজ শেষ করা",
+        "folder": "ending-salah"
+    }
+]
